@@ -3,9 +3,11 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
+import { HomePageHero } from '../components/HomePage/Hero/HomePageHero';
+
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Strength</title>
         <meta name="description" content="Build Strength" />
@@ -14,7 +16,9 @@ const Home: NextPage = () => {
 
       <nav></nav>
 
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <HomePageHero />
+      </main>
 
       <footer className={styles.footer}></footer>
     </div>
